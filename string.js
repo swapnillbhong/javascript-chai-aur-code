@@ -5,7 +5,7 @@ let repoCount = 50
 console.log(`hello my name is ${name} and mmy repo count is ${repoCount} `)//mordern type of writing 
 
 const gameName = new String('GodFather')//declare string as a object
-
+ //basic function of string 
 console.log(typeof  gameName);
 console.log(gameName.length);
 console.log(gameName.toUpperCase());

@@ -7,3 +7,5 @@ var accountName ="swapdil";
  accountEmail =" swapnil@gmail.com";
 
  console.table([accountID,accountEmail,accountName,acountState,name]);
+ console.log(typeof"swapnil")
+ console.log(typeof accountID)

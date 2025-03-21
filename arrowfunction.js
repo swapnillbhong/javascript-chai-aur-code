@@ -31,5 +31,5 @@ const addtwo= (num1,num2) =>{
 }
 //console.log(addtwo(5,4))
 //implicit return 
-const subtwo = (num1,num2) => num1-num2
+const subtwo = (num1,num2) => ( num1-num2)
 console.log(subtwo(5,2))

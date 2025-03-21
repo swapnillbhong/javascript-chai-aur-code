@@ -18,4 +18,6 @@ const userInsta={
     }
 }
 //nasted object can be accessable in javascript
-console.log(userInsta.fullname.username.firstname)
+//console.log(userInsta.fullname.username.firstname)
+
+

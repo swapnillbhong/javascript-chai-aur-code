@@ -8,7 +8,8 @@ function myname(){ //BASIC SYNTAX
 // myname()//FOR CALLING FUNCTION
 
 function addition(num1,num2){
-    console.log(num1+num2);
-    
+ //   console.log(num1+num2);
+    return num1+num2
 }
-addition(3,5)
+const result= addition(3,5)
+console.log("result:",result);

@@ -5,4 +5,10 @@ function myname(){ //BASIC SYNTAX
     console.log("P");
     console.log("Y");
 }
- myname()//FOR CALLING FUNCTION
+// myname()//FOR CALLING FUNCTION
+
+function addition(num1,num2){
+    console.log(num1+num2);
+    
+}
+addition(3,5)

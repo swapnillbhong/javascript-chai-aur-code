@@ -18,4 +18,10 @@ function coffie(){
     let username =" swappy "
     console.log(this.username)
 }
-coffie()
+// coffie()
+
+const office = () =>{
+    let usernam =" swapnil"
+    console.log(this)
+}
+office()

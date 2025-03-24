@@ -56,3 +56,12 @@ const newNums = myNumber
 .map( (num)=> num*10 )
 .map( (num)=> num +1)
 //console.log(newNums);
+//reduce method
+
+const val=[1,2,3,4]
+
+const cali =val.reduce(function (acc,curval){
+    console.log(`acc: ${acc} and curval: ${curval}`);
+    return acc+curval
+},0)
+console.log(cali);

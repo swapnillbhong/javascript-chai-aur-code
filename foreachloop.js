@@ -43,5 +43,16 @@ const myNum =[1,2,3,4,5,6,7,8,9,10]
 const newNum = myNum.filter( num=> {
     return num > 4
 } )
-console.log(newNum);
+//console.log(newNum);
 
+
+//map property
+const myNumber =[1,2,3,4,5,6,7,8,9,10]
+
+//const newNums = myNumber.map( (num)=> { return num+10}  )
+
+// chaining example'
+const newNums = myNumber
+.map( (num)=> num*10 )
+.map( (num)=> num +1)
+console.log(newNums);

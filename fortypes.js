@@ -19,5 +19,15 @@ for (const key of map) {
 }
 //to print key and value 
 for (const [key, value] of map) {
-    console.log(key ,":-",value)
+  //  console.log(key ,":-",value)
 }
+//object is not iterate in for of loop
+const myObj= {
+    'game1':'NFS',
+    'game2':'GTA',
+    'game3':'mario'
+}
+// for (const [key, value] of myObj) {
+//   console.log(key,":-",value);
+    
+// }

@@ -27,8 +27,19 @@
     //attachEvent 
     //jQuery - onEvent
 //addeventlisten 
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("click inside the Ul")
+    },false)
+
     document.getElementById('owl').addEventListener('click',function(e){
-        console.log(e)
+        console.log("owl click");
+        e.stopPropagation();
+    },false)
+
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault();
+        e.stopPropagation()
+        console.log("google click");
     },false)
 
 </script>

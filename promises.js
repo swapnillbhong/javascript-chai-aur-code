@@ -88,15 +88,26 @@ async function consumedPromiseFive(){
 
 consumedPromiseFive()
 //https://jsonplaceholder.typicode.com/users hitesh api
-async function getAllUser(){
-   try {
-    const response =  await fetch('https://jsonplaceholder.typicode.com/users')
-    const data = await response.json() 
-    console.log(data);
-   } catch (error) {
-    console.log("E:",error);
-   }
+// async function getAllUser(){
+//    try {
+//     const response =  await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data = await response.json() 
+//     console.log(data);
+//    } catch (error) {
+//     console.log("E:",error);
+//    }
    
-}
+// }
 
-getAllUser()
+// getAllUser()
+
+//.then .catch format 
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then( (response)=>{
+    return response.json()
+}).then( (data)=>{
+    console.log(data)
+})
+.catch( (error)=> console.log("error"))

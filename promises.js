@@ -36,7 +36,7 @@ promiseThree.then(function(user){
 
 const promiseFour = new Promise(function(resolve,reject){
     setTimeout(function(){
-        let error = false;
+        let error = true;
           if(!error)
             {
                 resolve({
@@ -51,14 +51,11 @@ const promiseFour = new Promise(function(resolve,reject){
     },1000)
 })
 
-promiseFour
-.then((user)=>{
+promiseFour.then((user)=>{
     console.log(user)
      return user.username
-})
-.then((username)=>{
+}).then((username)=>{
         console.log(username);
-})
-.catch(function(error){
+}).catch(function(error){
     console.log(error)
-})
+}).finally(()=> console.log("promise is either resolve or reject"))    

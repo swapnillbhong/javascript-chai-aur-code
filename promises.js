@@ -23,7 +23,15 @@ new Promise(function(resolve, reject){
     console.log("async 2 resolved ");
     
 })
-
-const promiseThree =new Promise(function(){
-
+//passing the value 
+const promiseThree =new Promise(function(resolve,reject
+){
+    setTimeout(function(){
+            resolve({user:"swapnil",email:"swap@gmail.com"});
+    },1000)
 })
+promiseThree.then(function(user){
+    console.log(user)
+})
+
+

@@ -65,6 +65,18 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
     }
 });
 
+// edit data
+
+document.querySelector("#student-list").addEventListener("click",(e)=>{
+    target = e.target
+    if(target.classList.contains("edit")){
+        selectedRow =target.parentElement.parentElement;
+        document.querySelector("#FirstName").value = selectedRow.children[0].textContent;
+        document.querySelector("#LastName").value = selectedRow.children[1].textContent;
+        document.querySelector("#rollNo").value = selectedRow.children[2].textContent;
+    }
+});
+
 // delete data 
 
 document.querySelector("#student-list").addEventListener("click", (e) => {

@@ -46,7 +46,7 @@ document.querySelector("#student-form").addEventListener("submit", (e) => {
              <td>${lastName}</td>
              <td>${rollNo}</td>
              <td>
-                 <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                 <a href="#" class="btn btn-warning btn-sm -" data-firstname=${firstName}>Edit</a>
                  <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
              </td>
             `;
